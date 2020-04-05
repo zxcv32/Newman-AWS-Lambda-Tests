@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Custom
+collections/Paterva_Public_Servers.postman_collection.json
+*.zip

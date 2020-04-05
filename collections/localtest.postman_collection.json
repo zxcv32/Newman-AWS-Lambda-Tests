@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "e10a4870-672d-45f8-8559-352a7c787cd6",
+		"name": "localtest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testpass",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54e105c5-beb9-4c97-8c6f-e7881314ef07",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gitlab.home:32769/api/v4",
+					"protocol": "http",
+					"host": [
+						"gitlab",
+						"home"
+					],
+					"port": "32769",
+					"path": [
+						"api",
+						"v4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testfail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54e105c5-beb9-4c97-8c6f-e7881314ef07",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gitlab.home:32769/api/v4",
+					"protocol": "http",
+					"host": [
+						"gitlab",
+						"home"
+					],
+					"port": "32769",
+					"path": [
+						"api",
+						"v4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+} 
