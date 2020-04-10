@@ -3,6 +3,6 @@ Monitor APIs using Postman's CLI Node.js tool Newman and can perform arbitrary a
 
 ## Reuirements
 * AWS Lambda
-* nodejs13.x
+* nodejs12.x
 * Newman [postmanlabs/newman](https://github.com/postmanlabs/newman)
 * AWS-SDK for local testing
