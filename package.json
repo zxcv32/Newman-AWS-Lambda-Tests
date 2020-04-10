@@ -1,0 +1,28 @@
+{
+  "name": "newman-aws-lambda-tests",
+  "version": "1.0.0",
+  "description": "Newman collection runner on AWS Lambda.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/zxcV32/Newman-AWS-Lambda-Tests.git"
+  },
+  "keywords": [
+    "newman",
+    "postman",
+    "aws",
+    "lambda"
+  ],
+  "author": "Ashwani Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/zxcV32/Newman-AWS-Lambda-Tests/issues"
+  },
+  "homepage": "https://gitlab.com/zxcV32/Newman-AWS-Lambda-Tests#readme",
+  "dependencies": {
+    "newman": "^5.0.0"
+  }
+}

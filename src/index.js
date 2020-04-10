@@ -2,8 +2,9 @@ var AWS = require('aws-sdk');
 const newman = require('newman');
 AWS.config.update({ region: 'ap-south-1' }); // Setting default region
 
-exports.handler = (event) => {
-    runNewman();
+exports.handler = event => {
+    console.log('Running Newman');
+    //runNewman();
     const response = {
         statusCode: 200,
         body: JSON.stringify('Collection run.'),
@@ -11,10 +12,10 @@ exports.handler = (event) => {
     return response;
 };
 
-runNewman();
+runNewman(); // For local testing.
 function runNewman() {
     newman.run({
-        collection: require('./collections/localtest.postman_collection.json'),
+        collection: require('../collections/localtest.postman_collection.json'),
         //reporters: 'json',
         timeout: '2500',  // 2.5s
         timeoutRequest: '2500',     // 2.5s

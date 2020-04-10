@@ -1,0 +1,10 @@
+service: Newman-AWS-Lambda-Tests
+provider:
+  name: aws
+  runtime: nodejs13.x
+
+functions:
+  index:
+    handler: src/index.handler
+    events:
+      - http: GET test
