@@ -106,3 +106,4 @@ dist
 # Custom
 collections/Paterva_Public_Servers.postman_collection.json
 *.zip
+.gitlab-ci.yml
