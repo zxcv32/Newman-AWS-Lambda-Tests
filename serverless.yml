@@ -1,7 +1,7 @@
 service: Newman-AWS-Lambda-Tests
 provider:
   name: aws
-  runtime: nodejs13.x
+  runtime: nodejs12.x
 
 functions:
   index:
